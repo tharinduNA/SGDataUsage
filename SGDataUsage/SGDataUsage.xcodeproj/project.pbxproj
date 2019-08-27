@@ -156,8 +156,6 @@
 		578364712314D8A6000AA960 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				578364752314DCAC000AA960 /* Codables.swift */,
-				578364772314DCCF000AA960 /* Response.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -165,6 +163,8 @@
 		578364722314D8B3000AA960 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				578364752314DCAC000AA960 /* Codables.swift */,
+				578364772314DCCF000AA960 /* Response.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
