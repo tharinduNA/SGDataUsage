@@ -20,7 +20,12 @@ class TableViewModel {
     
     public func getDataUsageInfo(completion: (() -> Void)?) {
         networking.callDataApi(type: DataUsage.self) { [weak self] (response) in
-            self?.dataUsage = response
+            
+            if response.success ?? false {
+                self?.dataUsage = response
+            } else {
+                print("Something went wrong")
+            }
             completion?()
         }
     }
