@@ -32,8 +32,8 @@ class ViewController: UIViewController, UITableViewDataSource {
                                                             return UITableViewCell()
                                                            
         }
-     
-        cell.dataUsage.text = "value"
+        let cellViewModel = viewModel.cellViewModel(index: indexPath.row)
+        cell.viewModel = cellViewModel
         return cell
     }
 
