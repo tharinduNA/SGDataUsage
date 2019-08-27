@@ -21,4 +21,5 @@ struct QuaterDetails: Codable {
     let volume_of_mobile_data: String?
     let quarter: String?
     let _id: Int?
+    let reduction: Bool?
 }
