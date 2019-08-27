@@ -16,4 +16,8 @@ struct Constants {
     /* URLs */
     static let END_POINT = "https://data.gov.sg/api/action/datastore_search?resource_id=a807b7ab-6cad-4aa6-87d0-e283a7353a0f&limit=100"
 
+    /* Messages */
+    static let NO_NETWORK_TITLE = "No Internet"
+    static let NO_NETWORK_MESSAGE = "Make sure you are connected to Internet"
+    
 }
