@@ -97,8 +97,13 @@
 		578364402314D01E000AA960 /* SGDataUsage */ = {
 			isa = PBXGroup;
 			children = (
+				578364742314D8E6000AA960 /* Controller */,
+				578364732314D8C5000AA960 /* Common */,
+				578364722314D8B3000AA960 /* Model */,
+				578364712314D8A6000AA960 /* Network */,
+				578364702314D883000AA960 /* ViewModel */,
+				5783646F2314D875000AA960 /* View */,
 				578364412314D01E000AA960 /* AppDelegate.swift */,
-				578364432314D01E000AA960 /* ViewController.swift */,
 				578364452314D01E000AA960 /* Main.storyboard */,
 				578364482314D01E000AA960 /* Assets.xcassets */,
 				5783644A2314D01E000AA960 /* LaunchScreen.storyboard */,
@@ -123,6 +128,49 @@
 				578364632314D01F000AA960 /* Info.plist */,
 			);
 			path = SGDataUsageUITests;
+			sourceTree = "<group>";
+		};
+		5783646F2314D875000AA960 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		578364702314D883000AA960 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		578364712314D8A6000AA960 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		578364722314D8B3000AA960 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		578364732314D8C5000AA960 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		578364742314D8E6000AA960 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				578364432314D01E000AA960 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
