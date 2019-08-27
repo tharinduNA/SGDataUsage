@@ -22,4 +22,11 @@ class DataViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    public var viewModel: CellViewModel? {
+        didSet {
+            guard let viewModel = viewModel else { return }
+            self.dataUsage.text = viewModel.dataVolume
+    
+        }
+    }
 }

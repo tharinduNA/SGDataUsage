@@ -20,6 +20,7 @@
 		5783647C2314DF9C000AA960 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5783647B2314DF9C000AA960 /* Constants.swift */; };
 		5783647E2314EF06000AA960 /* Communication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5783647D2314EF06000AA960 /* Communication.swift */; };
 		578364802314EF7D000AA960 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5783647F2314EF7D000AA960 /* TableViewModel.swift */; };
+		578364822314F421000AA960 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578364812314F421000AA960 /* CellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		5783647B2314DF9C000AA960 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5783647D2314EF06000AA960 /* Communication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Communication.swift; sourceTree = "<group>"; };
 		5783647F2314EF7D000AA960 /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
+		578364812314F421000AA960 /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				5783647F2314EF7D000AA960 /* TableViewModel.swift */,
+				578364812314F421000AA960 /* CellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				578364442314D01E000AA960 /* ViewController.swift in Sources */,
 				5783647E2314EF06000AA960 /* Communication.swift in Sources */,
 				578364802314EF7D000AA960 /* TableViewModel.swift in Sources */,
+				578364822314F421000AA960 /* CellViewModel.swift in Sources */,
 				578364762314DCAC000AA960 /* Codables.swift in Sources */,
 				578364422314D01E000AA960 /* AppDelegate.swift in Sources */,
 				5783647A2314DEC5000AA960 /* DataViewCell.swift in Sources */,

@@ -21,8 +21,14 @@ class TableViewModel {
         }
     }
     
+    public func cellViewModel(index: Int) -> CellViewModel? {
+        guard let data = dataUsage else { return nil }
+        let cellViewModel = CellViewModel(quater: (data.result?.records[index])!)
+        return cellViewModel
+    }
+    
     public var count: Int {
-        return 2 //TODO return correct count
+        return dataUsage?.result?.records.count ?? 0
     }
     
 }
