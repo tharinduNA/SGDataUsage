@@ -10,7 +10,8 @@ import UIKit
 class DataViewCell: UITableViewCell {
 
     @IBOutlet weak var dataUsage: UILabel!
-   
+    @IBOutlet weak var yearLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -26,7 +27,7 @@ class DataViewCell: UITableViewCell {
         didSet {
             guard let viewModel = viewModel else { return }
             self.dataUsage.text = viewModel.dataVolume
-    
+            self.yearLabel.text = viewModel.year
         }
     }
 }

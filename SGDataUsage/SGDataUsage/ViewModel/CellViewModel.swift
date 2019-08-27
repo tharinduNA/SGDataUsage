@@ -9,17 +9,18 @@ import Foundation
 
 class CellViewModel {
     
-    private let quater: QuaterDetails
+    private let quater: QuaterDetails?
     
-    init(quater: QuaterDetails) {
-        self.quater = quater
+    init(quater: QuaterDetails?) {
+        self.quater = quater ?? nil
     }
     
     var dataVolume: String {
-        return quater.volume_of_mobile_data ?? "0"
-        
+        return quater?.volume_of_mobile_data ?? Constants.BLANK
     }
     
-
+    var year: String {
+        return quater?.quarter ?? Constants.BLANK
+    }
     
 }
