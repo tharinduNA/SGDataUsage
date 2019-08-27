@@ -52,9 +52,7 @@ class TableViewModel {
         for year in yearsFilter {
             
             var yearConsumption = 0.0
-            
             var previousDataVolume = 0.0
-            
             var flagForReduction = false
             
             for quater in detailArray {
