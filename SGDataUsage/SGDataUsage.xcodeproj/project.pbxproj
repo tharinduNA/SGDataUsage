@@ -18,6 +18,8 @@
 		578364782314DCCF000AA960 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578364772314DCCF000AA960 /* Response.swift */; };
 		5783647A2314DEC5000AA960 /* DataViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578364792314DEC5000AA960 /* DataViewCell.swift */; };
 		5783647C2314DF9C000AA960 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5783647B2314DF9C000AA960 /* Constants.swift */; };
+		5783647E2314EF06000AA960 /* Communication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5783647D2314EF06000AA960 /* Communication.swift */; };
+		578364802314EF7D000AA960 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5783647F2314EF7D000AA960 /* TableViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		578364772314DCCF000AA960 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		578364792314DEC5000AA960 /* DataViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewCell.swift; sourceTree = "<group>"; };
 		5783647B2314DF9C000AA960 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5783647D2314EF06000AA960 /* Communication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Communication.swift; sourceTree = "<group>"; };
+		5783647F2314EF7D000AA960 /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,7 @@
 		578364702314D883000AA960 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				5783647F2314EF7D000AA960 /* TableViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -156,8 +161,7 @@
 		578364712314D8A6000AA960 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				578364752314DCAC000AA960 /* Codables.swift */,
-				578364772314DCCF000AA960 /* Response.swift */,
+				5783647D2314EF06000AA960 /* Communication.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -165,6 +169,8 @@
 		578364722314D8B3000AA960 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				578364752314DCAC000AA960 /* Codables.swift */,
+				578364772314DCCF000AA960 /* Response.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -318,6 +324,8 @@
 			files = (
 				578364782314DCCF000AA960 /* Response.swift in Sources */,
 				578364442314D01E000AA960 /* ViewController.swift in Sources */,
+				5783647E2314EF06000AA960 /* Communication.swift in Sources */,
+				578364802314EF7D000AA960 /* TableViewModel.swift in Sources */,
 				578364762314DCAC000AA960 /* Codables.swift in Sources */,
 				578364422314D01E000AA960 /* AppDelegate.swift in Sources */,
 				5783647A2314DEC5000AA960 /* DataViewCell.swift in Sources */,

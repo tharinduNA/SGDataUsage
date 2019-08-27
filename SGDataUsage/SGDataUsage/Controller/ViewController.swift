@@ -9,13 +9,21 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
 
+    private let viewModel = TableViewModel()
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       
+        viewModel.getDataUsageInfo { [weak self] in
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+        }
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return viewModel.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -25,7 +33,7 @@ class ViewController: UIViewController, UITableViewDataSource {
                                                            
         }
      
-         cell.dataUsage.text = "value"
+        cell.dataUsage.text = "value"
         return cell
     }
 

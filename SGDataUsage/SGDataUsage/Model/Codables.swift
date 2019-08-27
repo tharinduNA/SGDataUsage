@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct DataUsage: Codable {
     let help: String?
     let success: Bool?
