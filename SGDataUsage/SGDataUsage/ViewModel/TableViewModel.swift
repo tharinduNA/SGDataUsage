@@ -64,7 +64,7 @@ class TableViewModel {
             
                 if (quater?.quarter?.contains(year))! {
                     
-                    let dataVolume = Double(quater?.volume_of_mobile_data ?? "0") ?? 0
+                    let dataVolume = Double(quater?.volume_of_mobile_data ?? Constants.ZERO) ?? 0
                     
                     if previousDataVolume > dataVolume {
                         flagForReduction = true

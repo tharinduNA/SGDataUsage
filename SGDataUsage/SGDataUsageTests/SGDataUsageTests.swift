@@ -29,5 +29,16 @@ class SGDataUsageTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testApiEndPoint() {
+        let urlString = Constants.END_POINT
+        XCTAssertEqual(urlString, "https://data.gov.sg/api/action/datastore_search?resource_id=a807b7ab-6cad-4aa6-87d0-e283a7353a0f&limit=100")
+    }
+    
+    func testNoNetworkMessages() {
+        XCTAssertEqual(Constants.NO_NETWORK_TITLE, "No Internet")
+        XCTAssertEqual(Constants.NO_NETWORK_MESSAGE, "Make sure you are connected to Internet")
+    }
+
 
 }
