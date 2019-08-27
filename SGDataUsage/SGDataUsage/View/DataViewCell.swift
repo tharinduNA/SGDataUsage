@@ -11,6 +11,7 @@ class DataViewCell: UITableViewCell {
 
     @IBOutlet weak var dataUsage: UILabel!
     @IBOutlet weak var yearLabel: UILabel!
+    @IBOutlet weak var flag: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,6 +29,7 @@ class DataViewCell: UITableViewCell {
             guard let viewModel = viewModel else { return }
             self.dataUsage.text = viewModel.dataVolume
             self.yearLabel.text = viewModel.year
+            self.flag.isHidden = !viewModel.flag
         }
     }
 }

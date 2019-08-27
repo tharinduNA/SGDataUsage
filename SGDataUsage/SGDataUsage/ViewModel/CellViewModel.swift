@@ -23,4 +23,9 @@ class CellViewModel {
         return quater?.quarter ?? Constants.BLANK
     }
     
+    var flag: Bool {
+        return quater?.reduction ?? false
+    }
+    
+    
 }

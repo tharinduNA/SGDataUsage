@@ -52,16 +52,26 @@ class TableViewModel {
         for year in yearsFilter {
             
             var yearConsumption = 0.0
+            
+            var previousDataVolume = 0.0
+            
+            var flagForReduction = false
+            
             for quater in detailArray {
             
                 if (quater?.quarter?.contains(year))! {
+                    
                     let dataVolume = Double(quater?.volume_of_mobile_data ?? "0") ?? 0
+                    
+                    if previousDataVolume > dataVolume {
+                        flagForReduction = true
+                    }
                     yearConsumption = yearConsumption + dataVolume
-
+                    previousDataVolume = dataVolume
                 }
             }
             
-            let quaterDetailObj = QuaterDetails(volume_of_mobile_data: String(yearConsumption), quarter: year, _id: 1, reduction: false)
+            let quaterDetailObj = QuaterDetails(volume_of_mobile_data: String(yearConsumption), quarter: year, _id: 1, reduction: flagForReduction)
             filteredData.append(quaterDetailObj)
             
         }
