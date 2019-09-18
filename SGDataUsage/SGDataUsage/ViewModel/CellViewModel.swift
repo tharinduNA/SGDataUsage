@@ -16,7 +16,8 @@ class CellViewModel {
     }
     
     var dataVolume: String {
-        return quater?.volume_of_mobile_data ?? Constants.BLANK
+        let dataVol = Double(quater?.volume_of_mobile_data ?? "0")
+        return String(format: "%.2f", dataVol ?? 0)
     }
     
     var year: String {

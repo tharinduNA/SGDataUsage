@@ -13,9 +13,11 @@ class ViewController: UIViewController, UITableViewDataSource {
     private let viewModel = TableViewModel()
     @IBOutlet weak var tableView: UITableView!
     
+    private let backgroundImage = UIImageView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        setBackgroundImage()
         if Reachability.isConnectedToNetwork(){
             self.viewModel.getDataUsageInfo { [weak self] in
                 DispatchQueue.main.async {
@@ -29,8 +31,26 @@ class ViewController: UIViewController, UITableViewDataSource {
                 self.alertUser(strTitle: Constants.NO_NETWORK_TITLE, strMessage: Constants.NO_NETWORK_MESSAGE)
             }
         }
+        
+//        tableView.rowHeight = UITableView.automaticDimension
+//        tableView.estimatedRowHeight = 600
+
+        
     }
 
+    func setBackgroundImage() {
+        
+        view.addSubview(backgroundImage)
+        backgroundImage.translatesAutoresizingMaskIntoConstraints = false
+        backgroundImage.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        backgroundImage.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        backgroundImage.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        backgroundImage.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        backgroundImage.image = UIImage(named: "sky_bg")
+        view.sendSubviewToBack(backgroundImage)
+        
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.count
     }
@@ -56,3 +76,4 @@ extension UIViewController {
         UIApplication.shared.delegate?.window??.rootViewController?.present(myAlert, animated: true, completion: nil)
     }
 }
+
