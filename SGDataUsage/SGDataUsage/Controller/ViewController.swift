@@ -31,11 +31,7 @@ class ViewController: UIViewController, UITableViewDataSource {
                 self.alertUser(strTitle: Constants.NO_NETWORK_TITLE, strMessage: Constants.NO_NETWORK_MESSAGE)
             }
         }
-        
-//        tableView.rowHeight = UITableView.automaticDimension
-//        tableView.estimatedRowHeight = 600
-
-        
+        tableView.backgroundColor = UIColor.clear
     }
 
     func setBackgroundImage() {
@@ -62,9 +58,13 @@ class ViewController: UIViewController, UITableViewDataSource {
         }
         let cellViewModel = viewModel.cellViewModel(index: indexPath.row)
         cell.viewModel = cellViewModel
+        cell.backgroundColor = UIColor.clear
+        cell.returnValue = {
+            self.alertUser(strTitle: Constants.DISCREATION_TITLE,
+                           strMessage: Constants.DISCREATION_MESSAGE)
+        }
         return cell
     }
-
     
 }
 

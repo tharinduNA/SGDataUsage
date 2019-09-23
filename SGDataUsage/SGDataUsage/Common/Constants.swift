@@ -21,4 +21,7 @@ struct Constants {
     static let NO_NETWORK_TITLE = "No Internet"
     static let NO_NETWORK_MESSAGE = "Make sure you are connected to Internet"
     
+    static let DISCREATION_TITLE = "Wo-lah"
+    static let DISCREATION_MESSAGE = "There is a dicrease in data usage"
+    
 }

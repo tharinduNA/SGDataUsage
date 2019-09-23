@@ -7,12 +7,15 @@
 
 import UIKit
 
-class DataViewCell: UITableViewCell {
+class DataViewCell: UITableViewCell,UITableViewDelegate {
 
     @IBOutlet weak var dataUsage: UILabel!
     @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var flag: UIImageView!
 
+    
+    var returnValue: (()->())?
+    
     public var viewModel: CellViewModel? {
         didSet {
             
@@ -24,12 +27,13 @@ class DataViewCell: UITableViewCell {
             
             let tapGesture = UITapGestureRecognizer(target: self, action: #selector(callTapGesture))
             flag.addGestureRecognizer(tapGesture)
-            flag.isUserInteractionEnabled = true
+            flag.isUserInteractionEnabled = true 
             
         }
     }
     
     @objc func callTapGesture() {
+        returnValue?()
         print("You tapped image")
     }
     
